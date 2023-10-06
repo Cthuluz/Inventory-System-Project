@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="818.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nelson.inventorysystemproject.ModifyProductController">
+    <children>
+        <AnchorPane layoutX="18.0" layoutY="58.0" prefHeight="483.0" prefWidth="754.0" style="-fx-border-color: black; -fx-border-radius: 11;">
+            <children>
+                <GridPane layoutX="65.0" layoutY="99.0" prefHeight="185.0" prefWidth="171.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.20001220703125" minWidth="10.0" prefWidth="43.399993896484375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="154.39996337890625" minWidth="10.0" prefWidth="127.40000610351564" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="ID">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ProductID" disable="true" editable="false" prefHeight="26.0" prefWidth="149.0" GridPane.columnIndex="1">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                        <Label text="Name" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Inv" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Price" GridPane.rowIndex="3">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <Label text="Max" GridPane.rowIndex="4">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ProductName" prefHeight="26.0" prefWidth="70.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </GridPane>
+                <GridPane layoutX="109.0" layoutY="178.0" prefHeight="111.0" prefWidth="210.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="120.60003662109375" minWidth="10.0" prefWidth="85.80000000000001" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.20001220703125" minWidth="0.0" prefWidth="15.000024414062494" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.79998779296875" minWidth="10.0" prefWidth="27.79997558593749" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="150.4000244140625" minWidth="10.0" prefWidth="85.20003356933594" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="ProductInv" prefHeight="26.0" prefWidth="84.0">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="ProductPrice" prefHeight="26.0" prefWidth="70.0" GridPane.rowIndex="1">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="ProductMax" prefHeight="26.0" prefWidth="70.0" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                        <Label text="Min" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="11.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="ProductMin" prefHeight="26.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                            <font>
+                                <Font size="10.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </GridPane>
+                <Label layoutX="47.0" layoutY="43.0" text="Modify Product">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </Label>
+                <TableView fx:id="PartTable" layoutX="369.0" layoutY="52.0" prefHeight="142.0" prefWidth="357.0">
+                    <columns>
+                        <TableColumn fx:id="PartID" prefWidth="55.20001220703125" text="Part ID" />
+                        <TableColumn fx:id="PartName" prefWidth="75.99993896484375" text="Part Name" />
+                        <TableColumn fx:id="PartInv" prefWidth="104.0" text="Inventory Level" />
+                        <TableColumn fx:id="PartPrice" prefWidth="118.4000244140625" text="Price/ Cost per Unit" />
+                    </columns>
+                </TableView>
+                <Button layoutX="629.0" layoutY="208.0" mnemonicParsing="false" onAction="#addPartToProduct" text="Add" />
+                <Button layoutX="563.0" layoutY="401.0" mnemonicParsing="false" onAction="#removeAssociatedPart" prefHeight="26.0" prefWidth="149.0" text="Remove Associated Part" />
+                <Button layoutX="563.0" layoutY="439.0" mnemonicParsing="false" onAction="#saveProduct" text="Save" />
+                <Button layoutX="661.0" layoutY="439.0" mnemonicParsing="false" onAction="#cancelModifyProduct" text="Cancel" />
+                <TextField fx:id="SearchPartBar" layoutX="603.0" layoutY="21.0" onAction="#searchPart" promptText="Search by Part ID or Name">
+                    <font>
+                        <Font size="10.0" />
+                    </font>
+                </TextField>
+                <TableView fx:id="AssPartTable" layoutX="369.0" layoutY="249.0" prefHeight="142.0" prefWidth="357.0">
+                    <columns>
+                        <TableColumn fx:id="AssPartID" prefWidth="55.20001220703125" text="Part ID" />
+                        <TableColumn fx:id="AssPartName" prefWidth="75.99993896484375" text="Part Name" />
+                        <TableColumn fx:id="AssPartInv" prefWidth="104.0" text="Inventory Level" />
+                        <TableColumn fx:id="AssPartPrice" prefWidth="118.4000244140625" text="Price/ Cost per Unit" />
+                    </columns>
+                </TableView>
+            </children>
+        </AnchorPane>
+    </children>
+</AnchorPane>
