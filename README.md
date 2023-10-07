@@ -1,6 +1,6 @@
 Java Inventory System Project
 
-This project creates a user interface for inventory management of parts and products of vehicles. Products are made of multiple parts, and the list of products and parts are contained in their own observable list. 
+This project creates a user interface for inventory management of parts and products of vehicles. Products are made of multiple parts, and the list of products and parts are contained in their own observable list. Scene Builder was used for all GUI interfaces.
 
 Main page to view products and parts:
 
