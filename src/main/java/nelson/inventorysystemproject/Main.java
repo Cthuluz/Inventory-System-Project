@@ -9,7 +9,6 @@ import java.io.IOException;
 
 /**
  * Main class that initiates program, initial stage and initial variables
- * FUTURE ENHANCEMENT: The addition of min, max and stock could be useful in the main menu tables for clarity.
  * JAVADOCS LOCATION: InventorySystemProject/JavaDoc Comments
  *
  * @author Isabel Nelson
